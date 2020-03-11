@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: rgb(159, 159, 209);
+}
+
+.main .mensagem_sucesso {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(131, 228, 147);
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.main .mensagem_excluida {
+    margin-bottom: 20px;
+    padding: 10px;
+    background: rgb(228, 131, 131);
+    text-align: center;
+    font-size: 14px;
+    transition: all 0.5s ease;
+    border-radius: 5px;
+}
+
+.main {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 550px;
+    width: 100%;
+    background-color: white;
+    padding: 25px;
+    border-radius: 5px;
+    box-shadow: 4px 4px 2px rgba(230, 230, 250, 1);
+}
+
+.main .input_field {
+    margin-bottom: 10px;
+}
+
+.main input[type="text"] {
+    width: 100%;
+    border: 1px solid rgb(158, 158, 230);
+    padding: 10px;
+}
+
+.main input[type="submit"] {
+    border: 0;
+    padding: 10px;
+    width: 100%;
+    background: rgb(125, 125, 189);
+    color: white;
+    text-transform: lowercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+.main .conteudo-tabela {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 0.9em;
+    width: 100%;
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.15);
+}
+
+.main .conteudo-tabela thead tr {
+    background-color: rgb(125, 125, 189);
+    color: white;
+    text-align: left;
+    font-weight: bold;
+    text-transform: lowercase;
+    letter-spacing: 2px;
+}
+
+.main .conteudo-tabela th,
+.main .conteudo-tabela td {
+    padding: 12px 15px;
+}
+
+.main .conteudo-tabela tbody tr {
+    border-bottom: 1px solid lavender;
+}
+
+.main .conteudo-tabela a.editar {
+    background-color: rgb(159, 159, 209);
+    padding: 5px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: black;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.main .conteudo-tabela a.excluir {
+    background-color: rgb(104, 104, 182);
+    padding: 5px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    font-weight: bold;
+}
